@@ -1,0 +1,7 @@
+<servers>
+    <server>
+        <id>bintray-wiyu-maven</id>
+        <username>${CI_DEPLOY_USERNAME}</username>
+        <password>${CI_DEPLOY_PASSWORD}</password>
+    </server>
+</servers>

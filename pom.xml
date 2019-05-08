@@ -16,7 +16,7 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bintray.repo>bintray-examples/repo</bintray.repo>
+        <bintray.repo>maven</bintray.repo>
         <bintray.package>maven-template</bintray.package>
 
         <version.guava>22.0</version.guava>
@@ -29,7 +29,7 @@
         <repository>
             <id>bintray-wiyu-maven</id>
             <name>wiyu-maven</name>
-            <url>https://api.bintray.com/maven/wiyu/maven/maven-template/;publish=1</url>
+            <url>https://api.bintray.com/maven/wiyu/${bintray.repo}/${bintray.package}/;publish=1</url>
         </repository>
     </distributionManagement>
 
