@@ -16,7 +16,10 @@ cache:
   - "$HOME/.m2"
 
 deploy:
-  provider: script
-  script:
-    - mvn deploy
+  provider: bintray
+  file: descriptor.json
+  user: $BINTRAY_API_USER
+  key:
+    secure: Hv2bA1wgWFC9b1LS5cwaxa+mBFRjQTVNNXvyEXjTmM/gCxsUdb3ilzax+RIBuiKrsiuNqkMJZk8FDMBzlzEBhz+tAL+BQ5wha4MAH0VlbfmeI9gC5uuWluwSeLzKSdaGCJ78o6MJqBqUG+wLMFG4CI58hPQ4ToTXp4w4i7E8C0XHmFacKIOohpSbbpkn92jkgNxRLIP4hB2ggQofM9WV+6UB3a+Ygq9q0TvJp6LrRg4oFw2lyjhibzsGBvcb7oAxcDviqFod3sk9Fb1G3cIBXNf17ePKwXTzp+T6CzqzGq3jJ1KQGZHiEjOgzlY2POS67rGfBr02/v5FgPMeBDOHWzMXZ9iS7iSMLYLjGDPjk45r6GozeoeA+Z0goF+7qQnBjO+B1A0AczHyjksRuFa1QhDceLM4EkoRGc2DNcgHltwfJ2sIa9QeJa1vMWVqELAKJFVYzhEGQzamnDyXOejoPKNVMI4EI9LtT+XvHSldlsXYgF2lOqdJAHiLZsi/egFIoMkqoioah/RCeZkas1X8AwFJCJcMdDCkKYakpS1DN8R3vp5dyEDeYe+SLVPvJ1CAGMNRYcuanAqLa3AHkwSbcAKsffxoc1dUfIZMDxAf7elXmwlQVRPlIb26nC1DBToBdbg1bMgdpqDnM6skb5PCMaPLcN1kO22gjg+6Jg/TmOw=
+  dry-run: true
   on: master
